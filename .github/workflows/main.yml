@@ -127,4 +127,4 @@ jobs:
           USE_GKE_GCLOUD_AUTH_PLUGIN: "True"
         run: |
           ansible-playbook ansible/deploy-gke.yml \
-            --extra-vars "image_tag=${{ github.sha }}
+            --extra-vars "image_tag=${{ github.sha }}"
